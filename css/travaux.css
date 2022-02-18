@@ -1,0 +1,244 @@
+/* reset */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+}
+body{
+    font: 1.6rem "Roboto",sans-serif;
+    margin: 0;
+    background-color: #2e2e2e;
+
+    
+
+}
+p, ul, ol, h1, h2, h3, address{
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a,abbr{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+*{
+    box-sizing: border-box;
+}
+
+/*theme*/
+/* scroll bars */
+*{
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #FFF;
+}
+*::-webkit-scrollbar {
+    width: .5rem;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #222;
+    outline: .1rem solid #333;
+}
+:root{
+    --color-default-global: #222;
+    --color-primary: #3b9879;
+    --color-secondary: #92c38b;
+    --color-main: #6b6b6b;
+}
+/*nav bar*/
+nav{
+    height: 7rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position: relative;
+    background-color: var(--color-primary);
+}
+nav ul{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction:row;
+}
+nav ul li{
+   margin: 0 3rem;
+   
+   padding: 1.5rem;
+   border-radius:2.5rem;
+}
+nav ul li a{
+    font-weight: bold;
+    font-size:1.9rem;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+nav ul li:first-child a:hover{
+    margin: 0;
+    background: inherit;
+    padding: 0;
+    box-shadow: none;
+    border-radius: none;
+}
+nav ul li a:hover{
+    margin: 0.1rem;
+    padding: 1rem;
+    border-radius: .3rem;
+    box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.514);
+    color: #FFF;
+}
+nav ul img{
+    height: 5rem;
+    transition: all .1s ease-in-out;
+}
+nav ul img:hover{
+    height: 5.8rem;
+    filter: invert(100%); 
+}
+
+/*travaux*/
+section h2{
+    color: #fff;
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.article_of{
+    position: relative;
+    height: 0; /* les articles cachés */
+    opacity: 0;
+    z-index: -1;
+    overflow: hidden;
+    transition: all .6s ease-in-out;
+ }
+ .article_on{
+     opacity: 1;
+     z-index: 1;
+     height: initial;
+ }
+ 
+ 
+ figure figcaption h2::before{
+     content: url("../asset/edit-2.svg");
+     vertical-align: middle;
+ }
+ main figure{
+     display: grid;
+     max-width: 150rem;
+     margin: 2rem auto;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 1rem;
+     
+     border-radius: .3em;
+     box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.34);
+     background-color: var(--color-main);
+     padding: 3rem;
+     transition: all .2s ease-in-out;
+ 
+ }
+ main figure:hover{
+     background-color: rgb(122, 122, 122);
+     box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.514);
+ }
+ main figure figcaption{
+     padding: 0rem 1rem 1rem 1rem;
+ }
+ main figure figcaption h2{
+     color:rgb(255, 255, 255);
+     font-weight: 400;
+ }
+ main figure img{
+     order: 1;
+     display: block;
+     width: 100%;
+     border-radius: 0.5rem;
+     box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.452);
+ }
+ main figure figcaption h2,main figure figcaption p{
+     padding: 0rem 0rem 1rem 1rem;
+ 
+ }
+ main figure figcaption time{
+     padding: 1rem;
+     display: block;
+     color: rgb(34, 34, 34);
+     font-style: italic;
+     font-size: small;
+ }
+ main figure figcaption p{
+     line-height: 2.6rem;
+     padding-top: 0;
+ }
+ /* suite des article */
+ main figure:nth-child(2n + 2) figcaption{
+     order: 1;
+ }
+ main .btn-add{
+     font-size: initial;
+     padding: 1rem;
+     display: block;
+     width: 20rem;
+     text-align: center;
+     border: solid .1rem #222;
+     margin: 0 auto;
+     text-transform: uppercase;
+     cursor: pointer;
+ }
+ main .btn-add::before{
+     content:'+ ADD MORE';
+ }
+ main .btn-remove::before{
+     content:'- LESS ARTICLE';
+ }
+ /* responsive */
+ @media only screen and (max-width: 40rem){
+ 
+     main figure{
+     grid-template-columns: repeat(1, 1fr);
+     border-radius: 0%;
+     }
+     header h1{
+         font-size: 2rem;
+     }
+     main figure:nth-child(2n + 2) figcaption{
+         order:initial;
+     }
+     nav{
+         display: block;
+         height: 5.5rem;
+     }
+     nav img:last-child{
+         margin: 0 auto;
+     }
+     nav ul li{
+         display: flex;
+         margin: 0 1rem;
+         box-shadow: none;
+     }
+     nav ul li a{
+         font-size: 1rem;
+         padding: 0;
+ 
+     }
+     main figure{
+         margin: 2rem auto;
+     }
+     .icon1{
+         height: 5rem;        
+     }
+ }
+ @media screen and (orientation:landscape){
+     main figure{
+         grid-template-columns: repeat(2, 1fr);
+         }
+         header h1{
+             font-size: xx-large;
+         }
+         main figure:nth-child(2n + 2) figcaption{
+             order: 1;
+         }
+          
+ }

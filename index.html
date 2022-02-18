@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio - développeur front...">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./asset/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./asset/favicon-16x16.png">
+    <link rel="manifest" href="./asset/site.webmanifest">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+</head>
+<body>
+    <header aria-labelledby="main-title">
+        <h1 id="main-title"><span class="material-icons" aria-hidden="true">
+            table_rows
+            </span>&nbsp;Samuel Atlani - développeur front</h1>
+    </header>
+    
+        <nav id="two">
+				
+            <ul id="nav-two" class="nav">
+            <li>
+                <a href="./section/formation.html">Formation</a>
+		   	<audio id="beep-two" controls preload="auto">
+				<source src="./audio/beep.mp3" controls></source>
+				<source src="./audio/beep.ogg" controls></source>
+			</audio>
+			</li>
+            <li><a href="./section/competences.html">Compétences</a></li>
+            <li><a href="./section/travaux.html">Travaux</a></li>
+            <li><a href="./section/experiences.html">Expériences</a></li>
+            <li><a href="./section/profil.html">Profil</a></li>
+        </ul>
+    </nav>
+    
+
+    <div class="aside" id="aside" role="complementary" aria-labelledby="title">
+        <h2 id="title">Portfolio</h2>
+    </div>
+
+    <!-- <main>
+        <section>
+            <h2 id="formation" class="history"><span class="material-icons" aria-hidden="true">
+                edit
+                </span> Formation</h2>
+            <ul>
+                <li><time datetime="2003-01-19">2003</time> - Maîtrise en base de données avancées et programmation orientée objet
+                    Développement informatique et systèmes d’informations : CNAM de Paris SBDR</li>
+                <li><time datetime="2003-02-02">2003</time> - Maîtrise en base de données avancées et programmation orientée objet</li>
+                <li><time datetime="1998-02-02">1998</time> 1998 – Licence multimédia : Université Paris XIII. POO et algorithmes et web </li> 
+                <li>1990 – Diplôme Bac+2 d’Arts appliqués, Istituto Statale d’Arte de Palerme</li>
+            </ul>
+        </section>
+        section compétences
+        <section>
+            <h2 id="competence" class="history"><span class="material-icons" aria-hidden="true">
+                edit
+                </span>&nbsp;Compétences &amp; langages</h2>
+            <ul class="grid-logo">
+                <li><img src="./asset/file_type_html_icon_130541.png" alt="logo html 5"></li>
+                <li><img src="./asset/php-programmation-file-black-interface-symbol_icon-icons.com_57653.png" alt="logo php"></li>
+                <li><img src="./asset/css_original_wordmark_logo_icon_146576.png" alt="logo css"></li>
+                <li><img src="./asset/file_type_js_official_icon_130509.png" alt="logo js"></li>
+               
+                
+            </ul>
+        </section>
+        <section>
+            <h2 id="web" class="history"><span class="material-icons" aria-hidden="true">
+                edit
+                </span>&nbsp;Intervenant web</h2>
+            <ul>
+                <li>
+                    <strong>
+                        <time datetime="2019-09-19">2019</time> - 2021 Intervenant à ITIC Paris
+                    </strong>
+                </li>
+                <li>
+                    <p>
+                      
+                        Cours HTML5/CSS3 et web-design : spécificités HTML5
+                        Développement Front-end, Javascript native, Jquery, AJAX, responsive & mobile first. Framework : Express js
+                        Développement Back : PHP et SQL
+                        SEO : méthode & outils de référencement naturel : Exploration, analyse et indexation des pages
+
+                    </p>
+                </li>
+                
+            </ul>
+        </section>
+        <section>
+            <h2 id="experience" class="history"><span class="material-icons" aria-hidden="true">
+                edit
+                </span>&nbsp;Expériences professionnelles</h2>
+            <ul>
+                <li><strong><time datetime="2019-09-28">2019</time>-21 OutOfPluto : développement d’applications pour des galeries d’art : </strong></li>
+                <li>
+                    <p>
+                        Environnement de développement : Python, Django
+                        Structuration html5 et mise en forme css.
+                        Fonctionnalité javascript
+                        Gestion de l’environnement 
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2><span class="material-icons" aria-hidden="true">
+                edit
+                </span>&nbsp;Loisirs</h2>
+            <ul>
+                <li>Voyage</li>
+                <li>Musique</li>
+                <li>Astronomie</li>
+            </ul>
+        </section>
+    </main> -->
+    <!--footer--><!--vocabulaire schema.org-->
+    <!-- <footer  id="profil">
+        <address itemscope itemtype="https://schema.org/PostalAddress" itemref="link">
+            <ul>
+                <li itemprop="streetAddress">Giuseppe Militello 2bis bd de l’est 75000 Paris</li>
+                <li itemprop="telephone">port : 06 82 24 33 11</li>
+                <li itemprop="number">N° de siret : 422 600 635 000 28</li>
+                <li itemprop="email">giusmili67@gmail.com</li>
+                <li itemprop="contactType">&copy; - 2021 - Militello</li>
+            </ul>
+        </address>
+    </footer> -->
+    <script src="./js/app.js"></script>
+    <script>$("#nav-two a")
+        .each(function(i) {
+          if (i != 0) { 
+            $("#beep-two")
+              .clone()
+              .attr("id", "beep-two" + i)
+              .appendTo($(this).parent()); 
+          }
+          $(this).data("beeper", i);
+          this.volume = 10.2;
+          
+        })
+        .mouseenter(function() {
+          $("#beep-two" + $(this).data("beeper"))[0].play();
+        });
+      $("#beep-two").attr("id", "beep-two0");</script>
+    
+</body>
+
+</html>

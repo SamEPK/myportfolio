@@ -1,0 +1,206 @@
+/* reset */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem "Roboto",sans-serif;
+    margin: 0;
+    background-color: #2e2e2e;
+
+}
+p, ul, ol, h1, h2, h3, address{
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a,abbr{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+*{
+    box-sizing: border-box;
+}
+
+/*theme*/
+/* scroll bars */
+*{
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #FFF;
+}
+*::-webkit-scrollbar {
+    width: .5rem;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #222;
+    outline: .1rem solid #333;
+}
+:root{
+    --color-default-global: #222;
+    --color-primary: #3b9879;
+    --color-secondary: #92c38b;
+    --color-main: #6b6b6b;
+}
+header h1, section h2{
+    line-height: 6.5rem;
+    text-align: center;
+    color: #fff;
+    background-color: var(--color-primary);
+    margin-bottom: 2rem;
+    font-weight: 00;
+    /* text-shadow: .1rem .1rem 0 var(--color-default-global); */
+}
+
+
+/* reset */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+}
+body{
+    font: 1.6rem "Roboto",sans-serif;
+    margin: 0;
+    background-color: #2e2e2e;
+    overflow-y: hidden; 
+    
+
+}
+p, ul, ol, h1, h2, h3, address{
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a,abbr{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+*{
+    box-sizing: border-box;
+}
+
+/*theme*/
+/* scroll bars */
+*{
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #FFF;
+}
+*::-webkit-scrollbar {
+    width: .5rem;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #222;
+    outline: .1rem solid #333;
+}
+:root{
+    --color-default-global: #222;
+    --color-primary: #3b9879;
+    --color-secondary: #92c38b;
+    --color-main: #6b6b6b;
+}
+/*nav bar*/
+nav{
+    height: 7rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position: relative;
+    background-color: var(--color-primary);
+}
+nav ul{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction:row;
+}
+nav ul li{
+   margin: 0 3rem;
+   
+   padding: 1.5rem;
+   border-radius:2.5rem;
+}
+nav ul li a{
+    font-weight: bold;
+    font-size:1.9rem;
+    transition: all .2s ease-in-out;
+    display: block;
+}
+nav ul li:first-child a:hover{
+    margin: 0;
+    background: inherit;
+    padding: 0;
+    box-shadow: none;
+    border-radius: none;
+}
+nav ul li a:hover{
+    margin: 0.1rem;
+    padding: 1rem;
+    border-radius: .3rem;
+    box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.514);
+    color: #FFF;
+}
+nav ul img{
+    height: 5rem;
+    transition: all .1s ease-in-out;
+}
+nav ul img:hover{
+    height: 5.8rem;
+    filter: invert(100%); 
+}
+
+/* test grid display block */
+
+/*section:nth-of-type(2) ul{
+    overflow: hidden;
+   display: table;
+    width: 100%;
+    font-size: 0;
+    
+}
+/*section:nth-of-type(2) ul li{
+    
+    display: inline-block;
+    float: left;
+    width: calc(100% / 4);
+    
+}*/
+
+
+/* .aside{
+    background: url(https://zupimages.net/up/21/44/ebq5.png)no-repeat scroll center center / cover;
+    min-height: 50vh;
+    max-width: 120rem;
+    margin: 0 auto 2rem;
+    
+    display: grid;
+    align-items: center;
+
+} */
+section h2{
+    text-align: left;
+    margin-bottom: 0.3rem;
+    padding: 1rem;
+    line-height: 4.5rem;
+    /* top:0; */
+}
+main,footer{
+    max-width: 120.0rem;
+    margin: 0 auto;
+    background-color: var(--color-main);
+    box-shadow: 0 0 1.0rem #333 ;
+}
+section ul, section ul li p{
+    line-height: 2.6rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+main section{
+    margin: 10rem auto;
+}
