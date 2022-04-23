@@ -84,7 +84,7 @@ nav ul li:hover a{
 }
 
 .aside{
-    background: url(https://blog.lesjeudis.com/wp-content/uploads/2018/06/d%C3%A9veloppeur-informatique_552022249-1600x900.jpg)no-repeat scroll center center / cover;
+    background: url(https://blog.lesjeudis.com/wp-content/uploads/2018/06/d%C3%A9veloppeur-informatique_552022249-1600x900.jpg) no-repeat scroll center center / cover;
     min-height: 50vh;
     max-width: 120rem;
     margin: 0 auto 2rem;

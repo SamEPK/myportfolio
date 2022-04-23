@@ -53,62 +53,57 @@ header h1, section h2{
     font-weight: 00;
     /* text-shadow: .1rem .1rem 0 var(--color-default-global); */
 }
-.aside{
-    height: 93vh;
-    background: url(https://zupimages.net/up/21/44/ebq5.png)no-repeat scroll center center / cover;
-}
 header h1 .material-icons{
     display: none;
     cursor: pointer;
 }
 /*nav bar*/
-nav{
-    height: 7rem;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position: relative;
+nav {
     background-color: var(--color-primary);
 }
-nav ul{
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction:row;
+
+nav ul {
+    text-align: center;
 }
-nav ul li{
-   margin: 0 3rem;
-   
-   padding: 1.5rem;
-   border-radius:2.5rem;
+
+nav ul li {
+    margin: 0 3rem;
+    display: inline-block;
+    padding: 1.5rem;
+    border-radius: 2.5rem;
+    vertical-align: middle;
 }
-nav ul li a{
+
+nav ul li a {
     font-weight: bold;
-    font-size:1.9rem;
+    font-size: 1.9rem;
     transition: all .2s ease-in-out;
-    display: block;
 }
-nav ul li:first-child a:hover{
+
+nav ul li:first-child a:hover {
     margin: 0;
     background: inherit;
     padding: 0;
     box-shadow: none;
     border-radius: none;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     margin: 0.1rem;
     padding: 1rem;
     border-radius: .3rem;
     box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.514);
     color: #FFF;
 }
-nav ul img{
-    height: 5rem;
-    transition: all .1s ease-in-out;
+
+nav ul li a .material-icons {
+    font-size: 4.5rem;
+    transition-duration: .3s;
 }
-nav ul img:hover{
-    height: 5.8rem;
-    filter: invert(100%); 
+
+nav ul li a .material-icons:hover {
+    transform: scale(1.2);
+    color: #FFF;
 }
 section .grid-logo{
     width: 100rem;
@@ -121,58 +116,12 @@ section .grid-logo{
     
    
 }
-/* test grid display block */
 
-/*section:nth-of-type(2) ul{
-    overflow: hidden;
-   display: table;
-    width: 100%;
-    font-size: 0;
-    
-}
-/*section:nth-of-type(2) ul li{
-    
-    display: inline-block;
-    float: left;
-    width: calc(100% / 4);
-    
-}*/
-section:nth-of-type(2) ul li img{
-    position: relative;
-    display: block;
-    width: 100%;
-    transition-duration: .6s;
-    transform: scale(1);
-}
-section:nth-of-type(2) ul li:hover img{
-    transform: scale(1.1);
-    z-index: 3;
-}
 
 /* end */
 section .grid-logo li img{
     display: block;
     width: 100%;
-}
-
-/* .aside{
-    background: url(https://zupimages.net/up/21/44/ebq5.png)no-repeat scroll center center / cover;
-    min-height: 50vh;
-    max-width: 120rem;
-    margin: 0 auto 2rem;
-    
-    display: grid;
-    align-items: center;
-
-} */
-.aside h2{
-    padding-top: 15rem;
-    /* padding-right: 100rem; */
-    text-align: center;
-    font-size: 10.0rem;
-    color: #ffffff;
-    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
-    transition: all 300ms ease-in-out;
 }
 .aside h2:hover{
     letter-spacing: 0.20rem;
@@ -220,79 +169,18 @@ main section{
     margin: 1rem auto;
 }
 /* responsive */
-@media screen and (max-width: 90rem){
-    header h1{
-        font-size:2rem;
-        margin-bottom: .1rem;
-    }
-    header h1 .material-icons{
-        display: inline-block;
-    }
-    section h2{
-        font-size: 2rem;
-    }
-    header h1 span{
-        vertical-align: middle;
-    }
-    /* menu of */
-    nav{
-        position: relative;
-        z-index: -1;
-        height: 0;
-        margin-bottom: 1rem;
-        transition: all 500ms ease-in-out;
-        
-    }
-    /* menu on */
-    .open-menu{
-        z-index: 1;
-        height: 22.5rem;
-    }
-    
-    nav ul{
-        width: auto;
+@media screen and (max-width: 60rem){
+    nav ul li a:hover{
         margin: 0;
-        display: block;
-       
+        padding: 0;
+        color: #FFF;
+        box-shadow: none;
     }
-    nav ul li{
-        display: list-item;
-        width: auto;
-        text-align: left;
-       
-        
+    nav ul li {
+        margin: 0 1rem;
+        display: inline-block;
+        padding: none;
     }
-    nav ul li a{
-        padding-left: 1rem;
-    }
-    /* change index */
-    .aside{
-        position: relative;
-        width: auto;
-        margin: 0 1%;
-        z-index: 2;
-    }
-    .aside h2{
-        text-shadow: none;
-        display: none;
-    }
-    main{
-        margin: 0 1%;
-    }
-    section .grid-logo{
-        width: auto;
-       
-    }
+
 
 }
-
-/* @media screen and (orientation: landscape){
-    nav ul{
-        margin: 0 auto 2rem;
-       
-    }
-    nav ul li{
-        width: calc(100% / 5);
-    }
-    
-} */

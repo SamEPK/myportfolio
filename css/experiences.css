@@ -105,83 +105,53 @@ a,abbr{
     --color-main: #6b6b6b;
 }
 /*nav bar*/
-nav{
-    height: 7rem;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position: relative;
+nav {
     background-color: var(--color-primary);
 }
-nav ul{
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction:row;
+
+nav ul {
+    text-align: center;
 }
-nav ul li{
-   margin: 0 3rem;
-   
-   padding: 1.5rem;
-   border-radius:2.5rem;
+
+nav ul li {
+    margin: 0 3rem;
+    display: inline-block;
+    padding: 1.5rem;
+    border-radius: 2.5rem;
+    vertical-align: middle;
 }
-nav ul li a{
+
+nav ul li a {
     font-weight: bold;
-    font-size:1.9rem;
+    font-size: 1.9rem;
     transition: all .2s ease-in-out;
-    display: block;
 }
-nav ul li:first-child a:hover{
+
+nav ul li:first-child a:hover {
     margin: 0;
     background: inherit;
     padding: 0;
     box-shadow: none;
     border-radius: none;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     margin: 0.1rem;
     padding: 1rem;
     border-radius: .3rem;
     box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.514);
     color: #FFF;
 }
-nav ul img{
-    height: 5rem;
-    transition: all .1s ease-in-out;
-}
-nav ul img:hover{
-    height: 5.8rem;
-    filter: invert(100%); 
+
+nav ul li a .material-icons {
+    font-size: 4.5rem;
+    transition-duration: .3s;
 }
 
-/* test grid display block */
-
-/*section:nth-of-type(2) ul{
-    overflow: hidden;
-   display: table;
-    width: 100%;
-    font-size: 0;
-    
+nav ul li a .material-icons:hover {
+    transform: scale(1.2);
+    color: #FFF;
 }
-/*section:nth-of-type(2) ul li{
-    
-    display: inline-block;
-    float: left;
-    width: calc(100% / 4);
-    
-}*/
-
-
-/* .aside{
-    background: url(https://zupimages.net/up/21/44/ebq5.png)no-repeat scroll center center / cover;
-    min-height: 50vh;
-    max-width: 120rem;
-    margin: 0 auto 2rem;
-    
-    display: grid;
-    align-items: center;
-
-} */
 section h2{
     text-align: left;
     margin-bottom: 0.3rem;
@@ -203,4 +173,19 @@ section ul, section ul li p{
 
 main section{
     margin: 10rem auto;
+}
+@media screen and (max-width: 60rem){
+    nav ul li a:hover{
+        margin: 0;
+        padding: 0;
+        color: #FFF;
+        box-shadow: none;
+    }
+    nav ul li {
+        margin: 0 1rem;
+        display: inline-block;
+        padding: none;
+    }
+
+
 }
