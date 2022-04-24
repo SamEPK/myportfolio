@@ -131,56 +131,82 @@ section ul li img{
 section ul li{
     transition-duration: .3s;
 }
-section ul li:first-child {
+/*color icon web*/
+.grid-logo li:first-child {
     color: #ff5722;
     /* background-color: rgb(20, 20, 20);
     padding: 5px; */
 }
-section ul li:nth-child(2) {
+.grid-logo li:nth-child(2) {
     color: #2196f3;
     /* background-color: rgb(20, 20, 20);
     padding: 5px; */
 }
-
-section ul li:nth-child(3) {
+.grid-logo li:nth-child(3) {
     color: #f5de19;
     /* background-color: rgb(20, 20, 20);
     padding: 5px; */
 }
 
-section ul li:nth-child(4) {
+.grid-logo li:nth-child(4) {
     color: #777BB3;
     /* background-color: rgb(20, 20, 20);
     padding: 5px; */
 }
-/*hover icon*/
-section ul li:first-child:hover{
+/*hover icon web*/
+.grid-logo li:first-child:hover{
     box-shadow: 0 15px 15px -15px #e54c21;
     color: #f69c72;
 }
-section ul li:first-child:hover img{
+.grid-logo li:first-child:hover img{
     filter: drop-shadow(0 0 0.75rem #f69c72);
 }
-section ul li:nth-child(2):hover{
+.grid-logo li:nth-child(2):hover{
     box-shadow: 0 15px 15px -15px #2062af;
     color: #7cb6d9;
 }
-section ul li:nth-child(2):hover img{
+.grid-logo li:nth-child(2):hover img{
     filter: drop-shadow(0 0 0.75rem #7cb6d9);
 }
-section ul li:nth-child(3):hover{
+.grid-logo li:nth-child(3):hover{
     box-shadow: 0 15px 15px -15px #e9ca32;
     color: #fff096;
 }
-section ul li:nth-child(3):hover img{
+.grid-logo li:nth-child(3):hover img{
     filter: drop-shadow(0 0 0.75rem #fff096);
 }
-section ul li:nth-child(4):hover{
+.grid-logo li:nth-child(4):hover{
     box-shadow: 0 15px 15px -15px #7274b1;
     color: #b0b3d4;  
 }
-section ul li:nth-child(4):hover img{
+.grid-logo li:nth-child(4):hover img{
     filter: drop-shadow(0 0 0.75rem #b0b3d4);
+}
+/*color icon logiciel*/
+.grid-logo2 li:first-child {
+    color: #ff0000;
+    /* background-color: rgb(20, 20, 20);
+    padding: 5px; */
+}
+.grid-logo2 li:nth-child(2) {
+    color:#edb356;;
+    /* background-color: rgb(20, 20, 20);
+    padding: 5px; */
+}
+/*hover icon logiciel*/
+.grid-logo2 li:first-child:hover{
+    box-shadow: 0 15px 15px -15px #e52121;
+    color: #ff6161;
+}
+.grid-logo2 li:first-child:hover img{
+    filter: drop-shadow(0 0 0.75rem #ff3a3a);
+}
+.grid-logo2 li:nth-child(2):hover{
+    box-shadow: 0 15px 15px -15px #edb356;
+    color: #ffd966;
+}
+.grid-logo2 li:nth-child(2):hover img{
+    filter: drop-shadow(0 0 0.75rem #27789b);
 }
 main,footer{
     max-width: 120.0rem;
@@ -215,7 +241,7 @@ section ul li p{
         
     }
     section .grid-logo2{
-       max-width: 30rem;
+       max-width: 60%;
         
     }
 
