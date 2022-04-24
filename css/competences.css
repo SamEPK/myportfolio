@@ -8,9 +8,7 @@ html{
 body{
     font: 1.6rem "Roboto",sans-serif;
     margin: 0;
-    background-color: #2e2e2e;
-    overflow-y: hidden; 
-    
+    background-color: #2e2e2e;   
 
 }
 p, ul, ol, h1, h2, h3, address{
@@ -95,15 +93,32 @@ nav ul li a .material-icons:hover {
     transform: scale(1.2);
     color: #FFF;
 }
-
+section h2{
+    color: #fff;
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
 /*icon-compétences*/
 section .grid-logo{
-    width: auto;
     display: grid;
     padding: 1rem;
     grid-template-columns: repeat(4, 1fr); /* valeurs auto 4 fois */
     grid-gap: 1.0rem;
     grid-auto-flow: dense;
+    width: 45%;
+    margin: 0 auto;
+   
+}
+section .grid-logo2{
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(2, 1fr); /* valeurs auto 4 fois */
+    grid-gap: 1.0rem;
+    grid-auto-flow: dense;
+    max-width: 22%;
+    margin: 0 auto;
    
 }
 section ul li img{
@@ -179,14 +194,8 @@ section ul li p{
     text-align: center;
     transition: all .1s ;
 }
-section h2{
-    color: #fff;
-    margin-top: 3.5rem;
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    text-align: center;
-}
-@media screen and (max-width: 50rem){
+
+@media screen and (max-width: 60rem){
     nav ul li a:hover{
         margin: 0;
         padding: 0;
@@ -202,7 +211,25 @@ section h2{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1.0rem;
         grid-auto-flow: none;
-       
+        width: 60%;
+        
+    }
+    section .grid-logo2{
+       max-width: 30rem;
+        
+    }
+
+}
+@media screen and (max-width: 23rem){
+    section .grid-logo{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.0rem;
+        grid-auto-flow: none;
+        width: 100%;
+    }
+    section .grid-logo2{
+       max-width: 30rem;
+        
     }
 
 }
