@@ -96,7 +96,7 @@ nav ul li a .material-icons:hover {
     color: #FFF;
 }
 
-/*compétences*/
+/*icon-compétences*/
 section .grid-logo{
     width: auto;
     display: grid;
@@ -110,28 +110,74 @@ section ul li img{
     position: relative;
     display: block;
     width: 100%;
-    transition-duration: .6s;
+    transition-duration: .3s;
     transform: scale(1);
 }
-section ul li:hover img{
-    transform: scale(1.1);
-    z-index: 3;
+section ul li{
+    transition-duration: .3s;
+}
+section ul li:first-child {
+    color: #ff5722;
+    /* background-color: rgb(20, 20, 20);
+    padding: 5px; */
+}
+section ul li:nth-child(2) {
+    color: #2196f3;
+    /* background-color: rgb(20, 20, 20);
+    padding: 5px; */
+}
+
+section ul li:nth-child(3) {
+    color: #f5de19;
+    /* background-color: rgb(20, 20, 20);
+    padding: 5px; */
+}
+
+section ul li:nth-child(4) {
+    color: #777BB3;
+    /* background-color: rgb(20, 20, 20);
+    padding: 5px; */
+}
+/*hover icon*/
+section ul li:first-child:hover{
+    box-shadow: 0 15px 15px -15px #e54c21;
+    color: #f69c72;
+}
+section ul li:first-child:hover img{
+    filter: drop-shadow(0 0 0.75rem #f69c72);
+}
+section ul li:nth-child(2):hover{
+    box-shadow: 0 15px 15px -15px #2062af;
+    color: #7cb6d9;
+}
+section ul li:nth-child(2):hover img{
+    filter: drop-shadow(0 0 0.75rem #7cb6d9);
+}
+section ul li:nth-child(3):hover{
+    box-shadow: 0 15px 15px -15px #e9ca32;
+    color: #fff096;
+}
+section ul li:nth-child(3):hover img{
+    filter: drop-shadow(0 0 0.75rem #fff096);
+}
+section ul li:nth-child(4):hover{
+    box-shadow: 0 15px 15px -15px #7274b1;
+    color: #b0b3d4;  
+}
+section ul li:nth-child(4):hover img{
+    filter: drop-shadow(0 0 0.75rem #b0b3d4);
 }
 main,footer{
     max-width: 120.0rem;
     margin: auto;
 }
-figcaption {
+section ul li p{
     background-color: #222;
-    color: #fff;
-    font: italic smaller sans-serif;
+    font: bold  sans-serif;
     margin-top: 1.5rem;
     padding: 1rem;
     text-align: center;
-    transition: all .5s ease-in-out;
-}
-figcaption:hover{
-    color: #3b9879;
+    transition: all .1s ;
 }
 section h2{
     color: #fff;
@@ -140,7 +186,7 @@ section h2{
     padding: 1rem;
     text-align: center;
 }
-@media screen and (max-width: 60rem){
+@media screen and (max-width: 50rem){
     nav ul li a:hover{
         margin: 0;
         padding: 0;
@@ -160,3 +206,5 @@ section h2{
     }
 
 }
+
+

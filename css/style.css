@@ -155,6 +155,26 @@ nav ul li a:hover {
     }
 
 }
+@media screen and (max-width: 20rem) {
+    header h1 {
+        font-size: 2rem;
+        margin-bottom: .1rem;
+
+    }
+
+    .aside h2 {
+        font-size: 5.5rem;
+        padding-top: 8rem;
+    }
+
+    nav ul li {
+        line-height: 4rem;
+        font-size: 2rem;
+
+
+    }
+
+}
 
 @media screen and (orientation: landscape) {
     nav ul {
