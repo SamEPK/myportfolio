@@ -72,6 +72,11 @@ section h2 {
     font-weight: 00;
     /* text-shadow: .1rem .1rem 0 var(--color-default-global); */
 }
+header h1 span{
+    color: rgba(0,0,0,.6);
+    text-shadow: 3px 2px 3px rgba(255,255,255,.2);
+}
+
 
 .aside {
     height: 93vh;
@@ -79,7 +84,6 @@ section h2 {
 }
 
 .aside h2 {
-
     margin: 0 auto;
     padding-top: 15rem;
     text-align: center;

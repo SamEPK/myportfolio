@@ -196,7 +196,7 @@ section ul li{
 /*hover icon logiciel*/
 .grid-logo2 li:first-child:hover{
     box-shadow: 0 15px 15px -15px #e52121;
-    color: #ff6161;
+    color: #ff7e7e;
 }
 .grid-logo2 li:first-child:hover img{
     filter: drop-shadow(0 0 0.75rem #ff3a3a);
