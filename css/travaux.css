@@ -137,7 +137,6 @@ section h2 {
     height: initial;
 }
 
-
 /* figure figcaption h2::before{
      content: url("../asset/edit-2.svg");
      vertical-align: middle;
@@ -197,8 +196,12 @@ main figure figcaption p {
     padding-top: 0;
 }
 
+main figure a {
+    order: 1;
+}
+
 /* suite des article */
-main figure:nth-child(2n + 2) figcaption {
+main figure:nth-child(2n + 1) figcaption {
     order: 1;
 }
 

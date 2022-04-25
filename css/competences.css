@@ -1,50 +1,66 @@
 /* reset */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
-html{
+
+html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    
-}
-body{
-    font: 1.6rem "Roboto",sans-serif;
-    margin: 0;
-    background-color: #2e2e2e;   
 
 }
-p, ul, ol, h1, h2, h3, address{
+
+body {
+    font: 1.6rem "Roboto", sans-serif;
+    margin: 0;
+    background-color: #2e2e2e;
+
+}
+
+p,
+ul,
+ol,
+h1,
+h2,
+h3,
+address {
     font-style: normal;
     margin: 0;
     padding: 0;
     list-style: none;
 }
-a,abbr{
+
+a,
+abbr {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
-*{
+
+* {
     box-sizing: border-box;
 }
 
 /*theme*/
 /* scroll bars */
-*{
+* {
     /* For FF and non-webkit browsers */
     scrollbar-width: thin;
     scrollbar-color: #000 #FFF;
 }
+
 *::-webkit-scrollbar {
     width: .5rem;
 }
+
 *::-webkit-scrollbar-thumb {
     background-color: #222;
     outline: .1rem solid #333;
 }
-:root{
+
+:root {
     --color-default-global: #222;
     --color-primary: #3b9879;
     --color-secondary: #92c38b;
     --color-main: #6b6b6b;
 }
+
 /*nav bar*/
 nav {
     background-color: var(--color-primary);
@@ -93,55 +109,65 @@ nav ul li a .material-icons:hover {
     transform: scale(1.2);
     color: #FFF;
 }
-section h2{
+
+section h2 {
     color: #fff;
     margin-top: 3.5rem;
     margin-bottom: 1.5rem;
     padding: 1rem;
     text-align: center;
 }
+
 /*icon-compétences*/
-section .grid-logo{
+section .grid-logo {
     display: grid;
     padding: 1rem;
-    grid-template-columns: repeat(4, 1fr); /* valeurs auto 4 fois */
+    grid-template-columns: repeat(4, 1fr);
+    /* valeurs auto 4 fois */
     grid-gap: 1.0rem;
     grid-auto-flow: dense;
     width: 45%;
     margin: 0 auto;
-   
+
 }
-section .grid-logo2{
+
+section .grid-logo2 {
     display: grid;
     padding: 1rem;
-    grid-template-columns: repeat(2, 1fr); /* valeurs auto 4 fois */
+    grid-template-columns: repeat(2, 1fr);
+    /* valeurs auto 4 fois */
     grid-gap: 1.0rem;
     grid-auto-flow: dense;
     max-width: 22%;
     margin: 0 auto;
-   
+
 }
-section ul li img{
+
+section ul li img {
     position: relative;
     display: block;
     width: 100%;
     transition-duration: .3s;
     transform: scale(1);
 }
-section ul li{
+
+section ul li {
     transition-duration: .3s;
 }
+
 /*color icon web*/
 .grid-logo li:first-child {
     color: #ff5722;
     /* background-color: rgb(20, 20, 20);
     padding: 5px; */
 }
+
 .grid-logo li:nth-child(2) {
     color: #2196f3;
     /* background-color: rgb(20, 20, 20);
     padding: 5px; */
 }
+
 .grid-logo li:nth-child(3) {
     color: #f5de19;
     /* background-color: rgb(20, 20, 20);
@@ -153,111 +179,132 @@ section ul li{
     /* background-color: rgb(20, 20, 20);
     padding: 5px; */
 }
+
 /*hover icon web*/
-.grid-logo li:first-child:hover{
+.grid-logo li:first-child:hover {
     box-shadow: 0 15px 15px -15px #e54c21;
     color: #f69c72;
 }
-.grid-logo li:first-child:hover img{
+
+.grid-logo li:first-child:hover img {
     filter: drop-shadow(0 0 0.75rem #f69c72);
 }
-.grid-logo li:nth-child(2):hover{
+
+.grid-logo li:nth-child(2):hover {
     box-shadow: 0 15px 15px -15px #2062af;
     color: #7cb6d9;
 }
-.grid-logo li:nth-child(2):hover img{
+
+.grid-logo li:nth-child(2):hover img {
     filter: drop-shadow(0 0 0.75rem #7cb6d9);
 }
-.grid-logo li:nth-child(3):hover{
+
+.grid-logo li:nth-child(3):hover {
     box-shadow: 0 15px 15px -15px #e9ca32;
     color: #fff096;
 }
-.grid-logo li:nth-child(3):hover img{
+
+.grid-logo li:nth-child(3):hover img {
     filter: drop-shadow(0 0 0.75rem #fff096);
 }
-.grid-logo li:nth-child(4):hover{
+
+.grid-logo li:nth-child(4):hover {
     box-shadow: 0 15px 15px -15px #7274b1;
-    color: #b0b3d4;  
+    color: #b0b3d4;
 }
-.grid-logo li:nth-child(4):hover img{
+
+.grid-logo li:nth-child(4):hover img {
     filter: drop-shadow(0 0 0.75rem #b0b3d4);
 }
+
 /*color icon logiciel*/
 .grid-logo2 li:first-child {
     color: #ff0000;
     /* background-color: rgb(20, 20, 20);
     padding: 5px; */
 }
+
 .grid-logo2 li:nth-child(2) {
-    color:#edb356;;
+    color: #edb356;
+    ;
     /* background-color: rgb(20, 20, 20);
     padding: 5px; */
 }
+
 /*hover icon logiciel*/
-.grid-logo2 li:first-child:hover{
+.grid-logo2 li:first-child:hover {
     box-shadow: 0 15px 15px -15px #e52121;
     color: #ff7e7e;
 }
-.grid-logo2 li:first-child:hover img{
+
+.grid-logo2 li:first-child:hover img {
     filter: drop-shadow(0 0 0.75rem #ff3a3a);
 }
-.grid-logo2 li:nth-child(2):hover{
+
+.grid-logo2 li:nth-child(2):hover {
     box-shadow: 0 15px 15px -15px #edb356;
     color: #ffd966;
 }
-.grid-logo2 li:nth-child(2):hover img{
+
+.grid-logo2 li:nth-child(2):hover img {
     filter: drop-shadow(0 0 0.75rem #27789b);
 }
-main,footer{
+
+main,
+footer {
     max-width: 120.0rem;
     margin: auto;
 }
-section ul li p{
+
+section ul li p {
     background-color: #222;
-    font: bold  sans-serif;
+    font: bold sans-serif;
     margin-top: 1.5rem;
     padding: 1rem;
     text-align: center;
-    transition: all .1s ;
+    transition: all .1s;
 }
 
-@media screen and (max-width: 60rem){
-    nav ul li a:hover{
+@media screen and (max-width: 60rem) {
+    nav ul li a:hover {
         margin: 0;
         padding: 0;
         color: #FFF;
         box-shadow: none;
     }
+
     nav ul li {
         margin: 0 1rem;
         display: inline-block;
         padding: none;
     }
-    section .grid-logo{
+
+    section .grid-logo {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1.0rem;
         grid-auto-flow: none;
         width: 60%;
-        
+
     }
-    section .grid-logo2{
-       max-width: 60%;
-        
+
+    section .grid-logo2 {
+        max-width: 60%;
+
     }
 
 }
-@media screen and (max-width: 23rem){
-    section .grid-logo{
+
+@media screen and (max-width: 23rem) {
+    section .grid-logo {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1.0rem;
         grid-auto-flow: none;
         width: 100%;
     }
-    section .grid-logo2{
-       max-width: 30rem;
-        
+
+    section .grid-logo2 {
+        max-width: 30rem;
+
     }
 
 }
-
-
