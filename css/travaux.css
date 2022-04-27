@@ -139,11 +139,6 @@ section h2 {
     z-index: 1;
     height: initial;
 }
-
-/* figure figcaption h2::before{
-     content: url("../asset/edit-2.svg");
-     vertical-align: middle;
- } */
  main figure p:nth-child(2) {
     margin-top: 2rem;
     text-align: center;
@@ -276,5 +271,15 @@ main .btn-remove::before {
         display: inline-block;
         padding: none;
     }
+     #pub_6:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #pub_6:nth-child(2) img{
+        
+        width: 100%;
+        
+    }
+    
 
 }
