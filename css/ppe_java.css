@@ -68,7 +68,6 @@ nav {
     background-color: var(--color-primary);
     box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.514);
 }
-
 nav ul {
     text-align: center;
 }
@@ -113,51 +112,45 @@ nav ul li a .material-icons:hover {
     color: #FFF;
 }
 
-/*travaux*/
+/*itération*/
+section ul li{
+    color: #FFF;
+}
 section h2 {
     color: #fff;
-    margin-top: 3.5rem;
     margin-bottom: 1.5rem;
-    padding: 1rem;
     text-align: center;
     filter: drop-shadow(0 0 0.30rem #989cbe);
     font-size: 5rem;
 }
-
-.article_of {
-    position: relative;
-    height: 0;
-    /* les articles cachés */
-    opacity: 0;
-    z-index: -1;
-    overflow: hidden;
-    transition: all .6s ease-in-out;
+section img:first-child{
+    max-width: 80rem;
+    margin: 0 auto;
 }
-
-.article_on {
-    opacity: 1;
-    z-index: 1;
-    height: initial;
-}
-
-/* figure figcaption h2::before{
-     content: url("../asset/edit-2.svg");
-     vertical-align: middle;
- } */
- main figure p:nth-child(2) {
-    margin-top: 2rem;
-    text-align: center;
+section p{
     color: #FFF;
-    font-weight: bold;
-    font-size: 2.5rem;
-    filter: drop-shadow(0 0 0.15rem #b0b3d4);
+}
+main:nth-child(2) section:nth-child(2) ul:nth-child(2) li:nth-child(2) img:nth-child(1) {
+    max-width: 25rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+main:nth-child(2) section:nth-child(2) ul:nth-child(2) li:nth-child(2) img:nth-child(2) {
+    max-width: 25rem;
+    margin: 0 auto;
 
 }
-main figure {
+main:nth-child(2) section:nth-child(2) ul:nth-child(2) li:nth-child(1) {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+main:nth-child(2) section:nth-child(2) ul:nth-child(2) li:nth-child(5) {
+    margin-bottom: 2rem;
+}
+main section{
     display: grid;
-    max-width: 150rem;
+    max-width: 110rem;
     margin: 2rem auto;
-    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     border-radius: .3em;
     box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.34);
@@ -166,27 +159,20 @@ main figure {
     transition: all .2s ease-in-out;
 
 }
-
 main figure figcaption:first-child{
     text-align: center;
 }
-main figure:hover {
+main section:hover {
     background-color: rgb(87, 87, 87);
     box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.514);
 }
-
-main figure figcaption {
-    padding: 0rem 1rem 1rem 1rem;
-}
-
 main figure figcaption h2 {
     color: rgb(255, 255, 255);
     font-weight: 400 bold;
     filter: drop-shadow(0 0 0.15rem #b0b3d4);
 }
 
-main figure img {
-    order: 1;
+main section img {
     display: block;
     width: 100%;
     border-radius: 0.5rem;
@@ -213,34 +199,7 @@ main figure figcaption p {
     color: rgb(201, 201, 201);
 }
 
-main figure a {
-    order: 1;
-}
 
-/* suite des article */
-main figure:nth-child(2n + 1) figcaption {
-    order: 1;
-}
-
-main .btn-add {
-    font-size: initial;
-    padding: 1rem;
-    display: block;
-    width: 20rem;
-    text-align: center;
-    border: solid .1rem #222;
-    margin: 0 auto;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-main .btn-add::before {
-    content: '+ ADD MORE';
-}
-
-main .btn-remove::before {
-    content: '- LESS ARTICLE';
-}
 
 /* responsive */
 @media screen and (max-width: 60rem) {

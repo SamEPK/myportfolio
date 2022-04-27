@@ -44,7 +44,7 @@ a,abbr{
     --color-secondary: #92c38b;
     --color-main: #6b6b6b;
 }
-header h1, section h2{
+header h1{
     line-height: 6.5rem;
     text-align: center;
     color: #fff;
@@ -66,9 +66,6 @@ body{
     font: 1.6rem "Roboto",sans-serif;
     margin: 0;
     background-color: #2e2e2e;
-    overflow-y: hidden; 
-    
-
 }
 p, ul, ol, h1, h2, h3, address{
     font-style: normal;
@@ -104,9 +101,16 @@ a,abbr{
     --color-secondary: #92c38b;
     --color-main: #6b6b6b;
 }
+:root{
+    --color-theme-header: #222222;
+    --color-theme-primary: #2b2a33;
+    --color-theme-secondary: #cccccc;
+    --color-theme-alternate: #dfe6e9;
+}
 /*nav bar*/
 nav {
     background-color: var(--color-primary);
+    box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.514);
 }
 
 nav ul {
@@ -152,28 +156,8 @@ nav ul li a .material-icons:hover {
     transform: scale(1.2);
     color: #FFF;
 }
-section h2{
-    text-align: left;
-    margin-bottom: 0.3rem;
-    padding: 1rem;
-    line-height: 4.5rem;
-    /* top:0; */
-}
-main,footer{
-    max-width: 120.0rem;
-    margin: 0 auto;
-    background-color: var(--color-main);
-    box-shadow: 0 0 1.0rem #333 ;
-}
-section ul, section ul li p{
-    line-height: 2.6rem;
-    padding: 1rem;
-    text-align: justify;
-}
 
-main section{
-    margin: 10rem auto;
-}
+
 @media screen and (max-width: 60rem){
     nav ul li a:hover{
         margin: 0;

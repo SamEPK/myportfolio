@@ -44,7 +44,8 @@ a,abbr{
     --color-secondary: #92c38b;
     --color-main: #6b6b6b;
 }
-header h1, section h2{
+
+header h1{
     line-height: 6.5rem;
     text-align: center;
     color: #fff;
@@ -60,12 +61,11 @@ header h1 .material-icons{
 /*nav bar*/
 nav {
     background-color: var(--color-primary);
+    box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.514);
 }
-
 nav ul {
     text-align: center;
 }
-
 nav ul li {
     margin: 0 3rem;
     display: inline-block;
@@ -105,71 +105,65 @@ nav ul li a .material-icons:hover {
     transform: scale(1.2);
     color: #FFF;
 }
-section .grid-logo{
-    width: 100rem;
-    margin: auto;
-    display: grid;
+/*parcours*/
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 1rem;
-    grid-template-columns: repeat(4, 1fr); /* valeurs auto 4 fois */
-    grid-gap: 1.0rem;
-    grid-auto-flow: dense;
-    
-   
 }
-
-
-/* end */
-section .grid-logo li img{
-    display: block;
-    width: 100%;
+figure{
+    width: 50rem;
+    margin: 4rem 1rem;
+    padding: .4rem 1rem;
+    border-left: .2rem solid #fff;
+    position: relative;
 }
-.aside h2:hover{
-    letter-spacing: 0.20rem;
+figure .date {
+    background:#ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 5rem;
+    padding: .5rem 2.5rem;
+    font-weight: bold;
 }
-section h2{
-    text-align: left;
-    margin-bottom: 0.3rem;
-    padding: 1rem;
-    line-height: 4.5rem;
-    /* top:0; */
-}
-main,footer{
-    max-width: 120.0rem;
-    margin: 0 auto;
-    background-color: var(--color-main);
-    box-shadow: 0 0 1.0rem #333 ;
-}
-section ul, section ul li p{
-    line-height: 2.6rem;
-    padding: 1rem;
-    text-align: justify;
-}
-
-footer{
-    background: none;
-    background-color: var(--color-primary);
-    margin-top:2rem;
-}
-footer ul li{
-    text-align: center;
+figure h2{
+    font-size: 2.5rem;
     color: #fff;
-    font-size: small;
+    padding-top: 1.5rem;
 }
-footer address ul{
-    padding: 1rem;
+figure .material-symbols-outlined{
+    position: absolute;
+    top: -3%;
+    left: -5%;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color:rgb(0, 0, 0);
+    filter: drop-shadow(0 0 1rem rgb(168, 245, 175)); ;
+    background: rgb(72, 167, 130);
 }
-.history{
-    transition-duration: 0.5s;
+figure:nth-child(2) .material-symbols-outlined{
+    top: -5%;
 }
-.history:target{
-    background-color: #ccc;
-    color: #222;
+figure:nth-child(3) .material-symbols-outlined{
+    top: -10%;
 }
-main section{
-    margin: 1rem auto;
+figure p{
+    font-size: 2rem;
+    color: #fff;
+    margin: 2rem;
+}
+figure ul li{
+    font-size: 1.5rem;
+    margin-left: 5rem;
+    color: #fff;
+    list-style: disc;
 }
 /* responsive */
-@media screen and (max-width: 60rem){
+@media screen and (max-width: 40rem){
     nav ul li a:hover{
         margin: 0;
         padding: 0;
@@ -181,6 +175,17 @@ main section{
         display: inline-block;
         padding: none;
     }
+    nav ul{
+        margin-bottom: 2rem;
+    }
+    figure{
+        width: 80%;
+    }
+    figure .material-symbols-outlined{
+        top: -2%;
+        left: -8%;
+    }
+    
 
 
 }
