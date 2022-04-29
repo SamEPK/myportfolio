@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded",()=>{
                 titre: "Formulaire Âge",
                 date: `16 Mars 2021`,
                 msg: "The missing 'E' in the word 'Monk' represents the incompleteness of one's spiritual journey to be a Monke.",
-                image: "./asset/Formulaire.png", 
+                image: "../asset/Formulaire.png", 
             },
             {
                 titre: "Article DC-Comics",
                 date: `10 Novembre 2020`,
                 msg: "Picture of a Mountain Gorilla right before he punched the photographer",
-                image: "./asset/Justice-League.png",
+                image: "../asset/Justice-League.png",
             }
 
         ]
