@@ -35,14 +35,14 @@ document.addEventListener("DOMContentLoaded",()=>{
                 `${data.titre} ${data.date} ${data.msg} ${data.image}`
             )
             stock_article += `
-                            <figure>
+                            <article>
                                 <img src="${data.image}" alt="image">
                                 <figcaption>
                                     <h2>${data.titre}</h2>
                                     <time datetime="2021-04-10T20:00:00">${data.date}</time>
                                     <p>${data.msg}<span aria-hidden="true"></span></p>
                                 </figcaption>
-                            </figure>`
+                            </article>`
             }
      
         btn_article.addEventListener("click",function(){

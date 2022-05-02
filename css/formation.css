@@ -132,7 +132,7 @@ figure h2{
     color: #fff;
     padding-top: 1.5rem;
 }
-figure .material-symbols-outlined{
+figure .material-icons{
     position: absolute;
     top: -3%;
     left: -5%;
@@ -145,10 +145,10 @@ figure .material-symbols-outlined{
     filter: drop-shadow(0 0 1rem rgb(168, 245, 175)); ;
     background: rgb(72, 167, 130);
 }
-figure:nth-child(2) .material-symbols-outlined{
+figure:nth-child(2) .material-icons{
     top: -5%;
 }
-figure:nth-child(3) .material-symbols-outlined{
+figure:nth-child(3) .material-icons{
     top: -10%;
 }
 figure p{
@@ -181,7 +181,7 @@ figure ul li{
     figure{
         width: 80%;
     }
-    figure .material-symbols-outlined{
+    figure .material-icons{
         top: -2%;
         left: -8%;
     }
