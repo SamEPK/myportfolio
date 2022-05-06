@@ -71,6 +71,7 @@ nav {
     width: 100%;
     top: 0%;
     z-index: 2;
+    border-bottom: #2e7e63 solid 1rem;
 }
 nav ul {
     text-align: center;
@@ -132,8 +133,17 @@ section h2 {
     color: #fff;
     margin-bottom: 1.5rem;
     text-align: center;
-    filter: drop-shadow(0 0 0.30rem #989cbe);
+
     font-size: 5rem;
+    text-shadow: 0.25rem 0.25rem 0 var(--color-primary), 0.5rem 0.5rem 0 var(--color-primary);
+}
+section h3{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 3rem;
+    /* filter: drop-shadow(0 0 0.10rem #989cbe); */
+    color: rgb(255, 255, 255);
+    text-shadow: 0.25rem 0.25rem 0 var(--color-primary);
 }
 section img:first-child{
     max-width: 80rem;
@@ -255,13 +265,13 @@ th:first-child, td:first-child {
 
 /* redjan tab*/
 .table-primary{
-    max-width: 120rem; /* largeur du tableau*/
-    margin: 5rem auto 0;
+    max-width: 110rem; /* largeur du tableau*/
+    margin: 0 auto;
     padding: 1rem;
     box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.34);
     background-color: rgb(71, 71, 71);
-    padding: 3rem;
     transition: all .2s ease-in-out;
+    border-radius: .3rem;
 }
 .table-primary:hover {
     background-color: rgb(46, 46, 46);
@@ -272,26 +282,28 @@ th:first-child, td:first-child {
     line-height: 4.5rem;
     border-spacing: 0;
     background-color: #fafafa;
+    border-radius: .3rem;
 }
 table,tr,th,td{
-    border: solid 0.1rem #ccc;
+    /* border: solid 0.1rem #ccc; */
     border-collapse: collapse; /* ligne fine pour collapse */ /* seprate pour espacer les cellules*/ 
     padding: 0.5rem;
 }
 table caption{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    padding: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 400 bold;
+    filter: drop-shadow(0 0 0.15rem #b0b3d4);
     }
     table thead{
-        background-color: var(--color-secondary);
-    }
-    table tfoot{
         background-color: var(--color-primary);
     }
 table thead, tfoot{
     color: #000000;
 }
 tbody tr:nth-child(2n+1){
-    background-color: #dfe6e9;
+    background-color: #e2e2e2;
 }
 tbody tr{
     transition : all 500ms ease-in-out; /* vitesse de transition*/
@@ -302,6 +314,10 @@ tbody tr:hover{
     color:#fff;
     cursor:pointer; /* changement du signe de la souris au dessus de la phrase*/
 }
+tbody tr a{
+    color: rgb(0, 3, 158);
+    font-weight: bold;
+}
 
 table th:nth-of-type(1),table td:nth-of-type(1){
     width: 20%;
@@ -309,13 +325,9 @@ table th:nth-of-type(1),table td:nth-of-type(1){
 }
 /*icone*/
 table caption::before{
-    content: '\f1cb';
-    font-family: "Font Awesome 5 Brands";
     margin-right: 0.3rem;
 }
 table th:nth-of-type(1)::before{
-    content: '\f17b';
-    font-family: "Font Awesome 5 Brands";
     margin-right: 0.3rem;
     font-size: 2rem; /* la taille de l icone */
     vertical-align: -.3rem;

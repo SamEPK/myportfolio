@@ -70,6 +70,7 @@ nav {
 
 nav ul {
     text-align: center;
+    border-bottom: #2e7e63 solid 1rem;
 }
 
 nav ul li {
