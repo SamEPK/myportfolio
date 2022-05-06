@@ -253,6 +253,74 @@ th:first-child, td:first-child {
     color: #fff;
 } */
 
+/* redjan tab*/
+.table-primary{
+    max-width: 120rem; /* largeur du tableau*/
+    margin: 5rem auto 0;
+    padding: 1rem;
+    box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.34);
+    background-color: rgb(71, 71, 71);
+    padding: 3rem;
+    transition: all .2s ease-in-out;
+}
+.table-primary:hover {
+    background-color: rgb(46, 46, 46);
+    box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.514);
+}
+.table-primary table{
+    width: 100%; /* case*/
+    line-height: 4.5rem;
+    border-spacing: 0;
+    background-color: #fafafa;
+}
+table,tr,th,td{
+    border: solid 0.1rem #ccc;
+    border-collapse: collapse; /* ligne fine pour collapse */ /* seprate pour espacer les cellules*/ 
+    padding: 0.5rem;
+}
+table caption{
+    font-size: 2.5rem;
+    }
+    table thead{
+        background-color: var(--color-secondary);
+    }
+    table tfoot{
+        background-color: var(--color-primary);
+    }
+table thead, tfoot{
+    color: #000000;
+}
+tbody tr:nth-child(2n+1){
+    background-color: #dfe6e9;
+}
+tbody tr{
+    transition : all 500ms ease-in-out; /* vitesse de transition*/
+     
+}
+tbody tr:hover{
+    background-color: rgb(114, 114, 114);
+    color:#fff;
+    cursor:pointer; /* changement du signe de la souris au dessus de la phrase*/
+}
+
+table th:nth-of-type(1),table td:nth-of-type(1){
+    width: 20%;
+    text-align: center;
+}
+/*icone*/
+table caption::before{
+    content: '\f1cb';
+    font-family: "Font Awesome 5 Brands";
+    margin-right: 0.3rem;
+}
+table th:nth-of-type(1)::before{
+    content: '\f17b';
+    font-family: "Font Awesome 5 Brands";
+    margin-right: 0.3rem;
+    font-size: 2rem; /* la taille de l icone */
+    vertical-align: -.3rem;
+
+}
 
 
 /* responsive */
