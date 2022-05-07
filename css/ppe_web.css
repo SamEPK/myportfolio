@@ -66,11 +66,15 @@ abbr {
 /*nav bar*/
 nav {
     background-color: var(--color-primary);
+    box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.514);
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 2;
+    border-bottom: #2e7e63 solid 1rem;
 }
-
 nav ul {
     text-align: center;
-    border-bottom: #2e7e63 solid 1rem;
 }
 
 nav ul li {
@@ -113,51 +117,25 @@ nav ul li a .material-icons:hover {
     color: #FFF;
 }
 
-/*travaux*/
+/*itération*/
+section ul li{
+    color: #FFF;
+    
+}
 section h2 {
     color: #fff;
-    margin-top: 3.5rem;
     margin-bottom: 1.5rem;
-    padding: 1rem;
     text-align: center;
-    filter: drop-shadow(0 0 0.30rem #989cbe);
     font-size: 5rem;
 }
 
-.article_of {
-    position: relative;
-    height: 0;
-    /* les articles cachés */
-    opacity: 0;
-    z-index: -1;
-    overflow: hidden;
-    transition: all .6s ease-in-out;
-}
-
-.article_on {
-    opacity: 1;
-    z-index: 1;
-    height: initial;
-}
-
-/* figure figcaption h2::before{
-     content: url("../asset/edit-2.svg");
-     vertical-align: middle;
- } */
- main figure p:nth-child(2) {
-    margin-top: 2rem;
-    text-align: center;
+section p{
     color: #FFF;
-    font-weight: bold;
-    font-size: 2.5rem;
-    filter: drop-shadow(0 0 0.15rem #b0b3d4);
-
 }
-main figure {
+main section{
     display: grid;
-    max-width: 150rem;
+    max-width: 110rem;
     margin: 2rem auto;
-    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     border-radius: .3em;
     box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.34);
@@ -166,82 +144,40 @@ main figure {
     transition: all .2s ease-in-out;
 
 }
-
-main figure figcaption:first-child{
-    text-align: center;
+/*MAIN*/
+main section:first-child{
+    margin-top: 15rem;
 }
-main figure:hover {
-    background-color: rgb(87, 87, 87);
-    box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.514);
+main section .maquette{
+    display: flex;
 }
-
-main figure figcaption {
-    padding: 0rem 1rem 1rem 1rem;
+main section p{
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    text-align: justify;
 }
-
-main figure figcaption h2 {
-    color: rgb(255, 255, 255);
-    font-weight: 400 bold;
-    filter: drop-shadow(0 0 0.15rem #b0b3d4);
-}
-
-main figure img {
-    order: 1;
+main section img{
     display: block;
-    width: 100%;
-    border-radius: 0.5rem;
-    box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.452);
-}
-
-main figure figcaption h2,
-main figure figcaption p {
-    padding: 0rem 0rem 1rem 1rem;
-
-}
-
-main figure figcaption time {
-    padding: 1rem;
-    display: block;
-    color: rgb(65, 141, 99);
-    font-style: italic;
-    font-size: small;
-}
-
-main figure figcaption p {
-    line-height: 2.6rem;
-    padding-top: 0;
-    color: rgb(201, 201, 201);
-}
-
-main figure a {
-    order: 1;
-}
-
-/* suite des article */
-main figure:nth-child(2n + 1) figcaption {
-    order: 1;
-}
-
-main .btn-add {
-    font-size: initial;
-    padding: 1rem;
-    display: block;
-    width: 20rem;
-    text-align: center;
-    border: solid .1rem #222;
+    max-width: 35rem;
     margin: 0 auto;
-    text-transform: uppercase;
-    cursor: pointer;
+}
+main section h2{
+    padding-bottom: 1rem;
+    text-shadow: 0.25rem 0.25rem 0 #12816b,.5rem .5rem 0 #15967c;
+}
+html body main section:nth-child(1) img{
+    max-width: 80rem;
+    margin: 0 auto;
+}
+main section h3{
+    color: rgb(255, 255, 255);
+    text-shadow: 0.25rem 0.25rem 0 var(--color-primary);
 }
 
-main .btn-add::before {
-    content: '+ ADD MORE';
+main section ul li{
+    padding: 1rem;
+    margin: 1rem auto;
 }
-
-main .btn-remove::before {
-    content: '- LESS ARTICLE';
-}
-
 /* responsive */
 @media screen and (max-width: 60rem) {
     nav ul li a:hover {
@@ -275,6 +211,9 @@ main .btn-remove::before {
         margin: 0 1rem;
         display: inline-block;
         padding: none;
+    }
+    main section:first-child{
+        margin-top: 25rem;
     }
 
 }
