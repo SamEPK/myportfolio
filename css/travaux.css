@@ -144,7 +144,7 @@ section h2 {
     z-index: 1;
     height: initial;
 }
-main:nth-child(2) #pub_7:nth-child(2) {
+main:nth-child(2) #pub_8:nth-child(2) {
     margin-top: 2rem;
     text-align: center;
     max-width: 90rem;
@@ -152,7 +152,7 @@ main:nth-child(2) #pub_7:nth-child(2) {
     grid-template-columns: repeat(1, 1fr);
 
 }
-#pub_7 h2{
+#pub_8 h2{
     filter: none;
 }
  main article p:nth-child(2) {
@@ -296,19 +296,19 @@ main .btn-remove::before {
         display: inline-block;
         padding: none;
     }
-     #pub_6:nth-child(3){
+     #pub_7:nth-child(3){
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    #pub_6:nth-child(3) img{
+    #pub_7:nth-child(3) img{
         
         width: 100%;
         
     }
-    #pub_7:nth-child(2) img{
+    #pub_8:nth-child(2) img{
         width: 100%;
     }
-    #pub_7:nth-child(2) figcaption{
+    #pub_8:nth-child(2) figcaption{
         display: block;
     }
     
