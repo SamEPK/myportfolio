@@ -133,6 +133,7 @@ section h2 {
 }
 main figure {
     max-width: 50rem;
+    height: 50rem;
     margin: 5rem 1rem auto;
     grid-gap: 1rem;
     border-radius: .3em;
