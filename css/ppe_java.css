@@ -175,6 +175,12 @@ main section{
     transition: all .2s ease-in-out;
 
 }
+main section span{
+    background-color: #2e2e2e;
+    padding: .2rem;
+    border-radius: .3rem;
+    color: rgb(223, 223, 223);
+}
 main figure figcaption:first-child{
     text-align: center;
 }

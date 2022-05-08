@@ -144,11 +144,20 @@ main figure {
     
 
 }
+main figure details{
+    color: #FFF;
+}
 main figure summary{
     background-color: rgb(53, 53, 53);
     padding: 1rem;
     transition: all .2s ease-in-out;
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.514);
+}
+main details span{
+    background-color: #494949;
+    padding: .2rem;
+    border-radius: .3rem;
+    color: rgb(255, 255, 255);
 }
 main figure summary:hover{
     background-color: rgb(56, 56, 56);
