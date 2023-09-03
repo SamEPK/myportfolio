@@ -124,7 +124,7 @@ section h2 {
 section .grid-logo {
     display: grid;
     padding: 1rem;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     /* valeurs auto 4 fois */
     grid-gap: 1.0rem;
     grid-auto-flow: dense;
@@ -136,11 +136,11 @@ section .grid-logo {
 section .grid-logo2 {
     display: grid;
     padding: 1rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     /* valeurs auto 4 fois */
     grid-gap: 1.0rem;
     grid-auto-flow: dense;
-    max-width: 22%;
+    width: 45%;
     margin: 0 auto;
 
 }
@@ -181,6 +181,26 @@ section ul li {
     /* background-color: rgb(20, 20, 20);
     padding: 5px; */
 }
+.grid-logo li:nth-child(5) {
+    color: #3843db;
+    /* background-color: rgb(20, 20, 20);
+    padding: 5px; */
+}
+.grid-logo li:nth-child(6) {
+    color: #ff3a3aef;
+    /* background-color: rgb(20, 20, 20);
+    padding: 5px; */
+}
+.grid-logo li:nth-child(7) {
+    color: #2bb900;
+    /* background-color: rgb(20, 20, 20);
+    padding: 5px; */
+}.grid-logo li:nth-child(8) {
+    color: #ffffffef;
+    /* background-color: rgb(20, 20, 20);
+    padding: 5px; */
+}
+
 
 /*hover icon web*/
 .grid-logo li:first-child:hover {
@@ -218,6 +238,34 @@ section ul li {
 .grid-logo li:nth-child(4):hover img {
     filter: drop-shadow(0 0 0.75rem #b0b3d4);
 }
+.grid-logo li:nth-child(5):hover {
+    box-shadow: 0 15px 15px -15px #3c42e9;
+    color: #3c42e9;
+}
+.grid-logo li:nth-child(5):hover img {
+    filter: drop-shadow(0 0 0.75rem #3c42e9);
+}
+.grid-logo li:nth-child(6):hover img {
+    filter: drop-shadow(0 0 0.75rem #ff3a3aef);
+}
+.grid-logo li:nth-child(6):hover {
+    box-shadow: 0 15px 15px -15px #ff3a3aef;
+    color: #ff5353ef;
+}
+.grid-logo li:nth-child(7):hover img {
+    filter: drop-shadow(0 0 0.75rem #2bb900);
+}
+.grid-logo li:nth-child(7):hover {
+    box-shadow: 0 15px 15px -15px #2bb900;
+    color: #64bb49;
+}
+.grid-logo li:nth-child(8):hover img {
+    filter: drop-shadow(0 0 0.75rem #ffffffef);
+}
+.grid-logo li:nth-child(8):hover {
+    box-shadow: 0 15px 15px -15px #ffffffef;
+    color: #ffffffef;
+}
 
 /*color icon logiciel*/
 .grid-logo2 li:first-child {
@@ -232,7 +280,24 @@ section ul li {
     /* background-color: rgb(20, 20, 20);
     padding: 5px; */
 }
-
+.grid-logo2 li:nth-child(3) {
+    color: #566ded;
+    ;
+    /* background-color: rgb(20, 20, 20);
+    padding: 5px; */
+}
+.grid-logo2 li:nth-child(4) {
+    color: #edde56;
+    ;
+    /* background-color: rgb(20, 20, 20);
+    padding: 5px; */
+}
+.grid-logo2 li:nth-child(5) {
+    color: #789cff;
+    ;
+    /* background-color: rgb(20, 20, 20);
+    padding: 5px; */
+}
 /*hover icon logiciel*/
 .grid-logo2 li:first-child:hover {
     box-shadow: 0 15px 15px -15px #e52121;
@@ -247,9 +312,29 @@ section ul li {
     box-shadow: 0 15px 15px -15px #edb356;
     color: #ffd966;
 }
-
 .grid-logo2 li:nth-child(2):hover img {
     filter: drop-shadow(0 0 0.75rem #27789b);
+}
+.grid-logo2 li:nth-child(3):hover img {
+    filter: drop-shadow(0 0 0.75rem #566ded);
+}
+.grid-logo2 li:nth-child(3):hover {
+    box-shadow: 0 15px 15px -15px #566ded;
+    color: #687efd;
+}
+.grid-logo2 li:nth-child(4):hover img {
+    filter: drop-shadow(0 0 0.75rem #031db4);
+}
+.grid-logo2 li:nth-child(4):hover {
+    box-shadow: 0 15px 15px -15px #edb356;
+    color: rgb(255, 229, 151);
+}
+.grid-logo2 li:nth-child(5):hover img {
+    filter: drop-shadow(0 0 0.75rem #789cff);
+}
+.grid-logo2 li:nth-child(5):hover {
+    box-shadow: 0 15px 15px -15px #789cff;
+    color: #789cff;
 }
 
 main,
