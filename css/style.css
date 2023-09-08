@@ -161,6 +161,28 @@ nav ul li a {
 
 
     }
+    nav ul li{
+
+        transition: all 300ms ease-in-out;
+        
+    }
+    nav ul li:hover {
+        transform: translateY(-1rem);
+        
+    }
+    
+    nav ul li a {
+        padding: 1rem;
+        transition: all 300ms ease-in-out;
+        width: 100%;
+    }
+    nav ul li a:hover{
+        transform: translateY(1rem);
+    }
+    .aside{
+        height: 90vh;
+        width: 100%;
+    }
 
 }
 @media screen and (max-width: 20rem) {
@@ -169,6 +191,7 @@ nav ul li a {
         margin-bottom: .1rem;
 
     }
+   
 
     .aside h2 {
         font-size: 5.5rem;
@@ -181,6 +204,7 @@ nav ul li a {
 
 
     }
+    
 
 }
 
