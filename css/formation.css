@@ -163,6 +163,9 @@ figure ul li{
     color: #fff;
     list-style: disc;
 }
+.burger{
+    display: none;
+}
 /* responsive */
 @media screen and (max-width: 40rem){
     nav ul li a:hover{

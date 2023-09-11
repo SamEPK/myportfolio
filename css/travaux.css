@@ -272,7 +272,9 @@ main .btn-add::before {
 main .btn-remove::before {
     content: '- de travaux';
 }
-
+.burger{
+    display: none;
+}
 /* responsive */
 @media screen and (max-width: 60rem) {
     nav ul li a:hover {
