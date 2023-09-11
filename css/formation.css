@@ -186,6 +186,55 @@ figure ul li{
         top: -2%;
         left: -8%;
     }
+    /*Burger*/
+    .close-menu {
+        display: none;
+    }
+    header .burger {
+        padding-top: 1.2rem;
+        padding-left: 1rem;
+        display: block;
+    }
+
+    .open-menu {
+        display: block;
+        position: fixed;
+        height: 100%;
+        z-index: 2;
+        top: 0;
+        transition: all 3s ease-in-out;
+        right: 0;
+        visibility: visible;
+    }
+
+    .open-menu nav {
+        position: static;
+        display: flex;
+        padding: 1rem;
+        height: 100%;
+        width: 100%;
+        
+    }
+    .open-menu nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+    }
+    .open-menu nav ul li {
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+    .burger {
+        position: fixed;
+        top: 0rem;
+        right: 2rem;
+        cursor: pointer;
+        z-index: 5;
+        font-weight: 900;
+        color: #fafafa;
+        font-size: 4rem;
+    }
     
 
 
