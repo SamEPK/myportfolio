@@ -137,7 +137,7 @@ main figure {
     justify-content: flex-start;
     align-items: center;
     max-width: 60rem;
-    height: 55rem;
+    height: 65rem;
     margin: 5rem 1rem auto;
     grid-gap: 1rem;
     border-radius: .3em;
@@ -261,7 +261,7 @@ main .btn-remove::before {
     display: none;
 }
 /* responsive */
-@media screen and (max-width: 60rem) {
+@media screen and (max-width: 75rem) {
     nav ul li a:hover {
         margin: 0;
         padding: 0;
